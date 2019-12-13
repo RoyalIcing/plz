@@ -44,6 +44,7 @@ var httpCmd = &cobra.Command{
 		code, _ := strconv.Atoi(args[0])
 		// https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/408
 		fmt.Printf("https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/%d\n", code)
+		fmt.Printf("https://httpstatuses.com/%d\n", code)
 	},
 }
 

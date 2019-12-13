@@ -16,10 +16,19 @@ var rootCmd = &cobra.Command{
 	Use:   "plz [command]",
 	Short: "Search for useful developer things such as links, documentation & specs",
 	Long:  `Search for links, documentation, specs: IETF’s RFCs, HTTP statuses, MDN, WAI-ARIA`,
-	// Uncomment the following line if your bare application
-	// has an action associated with it:
+	Args:  cobra.ExactArgs(1),
 	Run: func(cmd *cobra.Command, args []string) {
-		fmt.Println("Is this thing working?")
+		term := args[0]
+
+		results := Find(term)
+		if len(results) == 0 {
+			fmt.Println(fmt.Errorf("No results found for '%s'", term))
+			os.Exit(1)
+		}
+
+		for _, result := range results {
+			fmt.Println(result)
+		}
 	},
 }
 
