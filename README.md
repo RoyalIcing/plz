@@ -29,5 +29,9 @@ https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA
 ## Install
 
 ```shell
+brew install RoyalIcing/plz/plz
+```
+
+```shell
 go get -u github.com/RoyalIcing/plz
 ```
