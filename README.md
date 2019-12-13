@@ -25,3 +25,9 @@ https://www.w3.org/TR/wai-aria-practices/
 https://www.w3.org/TR/html-aria/
 https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA
 ```
+
+## Install
+
+```shell
+go get -u github.com/RoyalIcing/plz
+```
