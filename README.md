@@ -19,7 +19,9 @@ https://tools.ietf.org/html/rfc7540
 ```
 
 ```shell
-> plz wai-aria
-https://www.w3.org/TR/wai-aria-1.1/
+> plz aria
+https://www.w3.org/TR/wai-aria/
+https://www.w3.org/TR/wai-aria-practices/
+https://www.w3.org/TR/html-aria/
 https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA
 ```
